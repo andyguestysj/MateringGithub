@@ -1,0 +1,3 @@
+# No external packages are required for the basic application.
+# Optional for testing:
+pytest

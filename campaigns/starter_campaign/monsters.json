@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Bog Goblin",
+        "challenge_rating": "1/4",
+        "description": "A sneaky goblin adapted to marshland ambushes."
+    },
+    {
+        "id": 2,
+        "name": "Moss Troll",
+        "challenge_rating": "3",
+        "description": "A hulking troll covered in moss and mushrooms."
+    }
+]

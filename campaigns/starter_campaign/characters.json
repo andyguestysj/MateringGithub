@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Elaria Moonbrook",
+        "class": "Ranger",
+        "level": "3",
+        "description": "A quiet elf ranger searching for a lost ruin."
+    },
+    {
+        "id": 2,
+        "name": "Borin Stonehand",
+        "class": "Fighter",
+        "level": "2",
+        "description": "A dwarf mercenary with a fondness for bad jokes."
+    }
+]

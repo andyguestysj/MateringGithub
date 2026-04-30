@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Green Hollow",
+        "region": "Northern Woods",
+        "description": "A small village surrounded by ancient trees."
+    },
+    {
+        "id": 2,
+        "name": "The Sunken Tower",
+        "region": "Old Marsh",
+        "description": "A collapsed wizard tower half-buried in swamp water."
+    }
+]
