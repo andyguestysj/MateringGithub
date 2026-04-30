@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run TTRPG GUI (debugpy)",
+      "type": "python",
+      "request": "launch",
+      "module": "src.main",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "justMyCode": false,
+      "redirectOutput": true,
+      "logToFile": true
+    }
+  ]
+}

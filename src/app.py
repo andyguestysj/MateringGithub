@@ -1,14 +1,20 @@
 from pathlib import Path
+
 from .data.campaign_loader import CampaignLoader
-from .menus.main_menu import MainMenu
+from .gui.main_window import run_gui
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 CAMPAIGNS_DIR = PROJECT_ROOT / "campaigns"
 
+
 def run_app() -> None:
+    """Create the campaign loader and start the GUI."""
+    print("Starting TTRPG Campaign Manager...")
+    print(f"Project root: {PROJECT_ROOT}")
+    print(f"Campaigns directory: {CAMPAIGNS_DIR}")
+
+    if not CAMPAIGNS_DIR.exists():
+        raise FileNotFoundError(f"Could not find campaigns folder: {CAMPAIGNS_DIR}")
+
     loader = CampaignLoader(CAMPAIGNS_DIR)
-    campaign_name = loader.get_default_campaign_name()
-    if campaign_name is None:
-        print("No campaigns found. Create a folder inside campaigns/ first.")
-        return
-    MainMenu(loader, campaign_name).run()
+    run_gui(loader)

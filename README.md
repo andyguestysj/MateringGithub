@@ -1,29 +1,95 @@
 # TTRPG Campaign Manager
 
-A small Python command-line project for learning Git, GitHub, branching, pull requests and merge conflicts.
+A simple Python project for learning Git and GitHub through a small tabletop role-playing game campaign manager.
 
-The app stores tabletop role-playing game campaign data in JSON files. Each campaign is stored in its own folder so you can switch between campaigns.
-
-## How to Run
-
-```bash
-python -m src.main
-```
+The application now includes a basic Tkinter GUI. It stores campaign data in JSON files so students can see how code and data change over time in Git.
 
 ## Features
 
 * Switch between campaigns
 * Manage characters, locations, monsters, rules and adventures
-* Add, list, view, edit and delete entries
-* Store data in human-readable JSON files
+* Add entries
+* Edit entries
+* Delete entries
+* View selected entry details
+* Store each campaign in its own folder
+* Keep campaign data in JSON files
 
-## Suggested Git Branches
+## How to Run
+
+From the project root:
+
+```bash
+python -m src.main
+```
+
+This launches the GUI.
+
+## Optional CLI Version
+
+The original command-line version is still available:
+
+```bash
+python -m src.main_cli
+```
+
+## VS Code Debugging
+
+This project includes `.vscode/launch.json` with two configurations:
+
+* `Run TTRPG Campaign Manager GUI`
+* `Run TTRPG Campaign Manager CLI`
+
+Open the Run and Debug panel in VS Code and choose the configuration you want.
+
+## Project Structure
 
 ```text
-feature/character-management
-feature/location-management
-feature/monster-search
-feature/campaign-switching
-feature/add-items
-feature/export-markdown
+ttrpg-campaign-manager/
+├── src/
+│   ├── main.py
+│   ├── main_cli.py
+│   ├── app.py
+│   ├── cli_app.py
+│   ├── data/
+│   ├── gui/
+│   ├── menus/
+│   ├── models/
+│   └── utils/
+├── campaigns/
+│   ├── starter_campaign/
+│   └── haunted_valley/
+├── tests/
+├── .vscode/
+├── .gitignore
+├── requirements.txt
+└── README.md
 ```
+
+## Why This Is Useful for GitHub Learning
+
+Students can create branches for features such as:
+
+* `feature/gui-search`
+* `feature/add-items`
+* `feature/session-notes`
+* `feature/new-campaign-button`
+* `feature-export-markdown`
+
+The campaign JSON files are useful for demonstrating commits, diffs, merge conflicts and pull requests.
+
+## Running the GUI on Windows
+
+From the project root, run:
+
+```bash
+python -m src.main
+```
+
+You can also double-click:
+
+```text
+run_gui.bat
+```
+
+If the app cannot start, the terminal will now stay open and show the error.
