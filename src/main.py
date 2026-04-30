@@ -28,6 +28,7 @@ from src.app import run_app
 
 def main() -> None:
     print("Running main() in src/main.py")
+    print(f"Current working directory: {Path.cwd()}")
     """Start the GUI and show useful errors if startup fails."""
     try:
         print("Starting the TTRPG Campaign Manager...")
